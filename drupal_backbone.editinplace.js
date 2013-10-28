@@ -38,7 +38,6 @@ var EditInPlaceView = {};
 
         save: function () {
             var attribute = this.model.get(this.attribute);
-            console.log(attribute);
             if(typeof(attribute) == 'object' &&  this.language !== null &&
               this.delta !== null && this.property !== null) {
                 attribute[this.language][this.delta][this.property] = this.$el.find(this.EditType).val();
