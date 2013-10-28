@@ -11,17 +11,17 @@ After double click in holder a new backbone is render for edit.
 Examples
 
 new EditInPlaceView({
-              el: $("#node-title"),
-              model: this.nodeModel,
-              attribute: "title"
-          }).render();
+  el: $("#node-title"),
+  model: this.nodeModel,
+  attribute: "title"
+}).render();
 
-          new EditInPlaceView({
-              el: $("#node-body"),
-              model: this.nodeModel,
-              attribute: "body",
-              language: 'und',
-              delta: 0,
-              property: 'value',
-              EditType: 'textarea'
-          }).render();
+new EditInPlaceView({
+  el: $("#node-body"),
+  model: this.nodeModel,
+  attribute: "body",
+  language: 'und',
+  delta: 0,
+  property: 'value',
+  EditType: 'textarea'
+}).render();
